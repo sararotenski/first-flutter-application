@@ -31,7 +31,23 @@ class HomePage extends StatelessWidget {
             currentAccountPicture: CircleAvatar(
               child: Text('S'),
             ),
+            ),
+
+            ListTile(
+              title: Text('Sara'),
+              subtitle: Text('Hoje tem aula às...'),
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage('https://br.web.img2.acsta.net/pictures/19/04/29/20/14/1886009.jpg'),
+              ),
+              trailing: Icon(Icons.add_location_alt),
+              onTap: (){
+                print('Clicou');
+              },
+              onLongPress: (){
+                print('Segurou');
+              }
             )
+
           ],
         ),
       ),    
